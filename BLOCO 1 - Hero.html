@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Preview - Imersao Nativa</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#0d1f4a;
+  --azul-m:#1a3a8a;
+  --azul-c:#2563eb;
+  --ouro:#facc15;
+  --laranja:#fb923c;
+  --verde:#34d399;
+  --I:#60a5fa;--M:#38bdf8;--E:#34d399;--R:#86efac;--S:#bef264;--A:#facc15;--O:#fb923c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:#0d1f4a;overflow-x:hidden}
+
+/* LOGO */
+.ll{font-weight:900;line-height:1;letter-spacing:-.02em}
+.ll .l1{color:var(--I)}.ll .l2{color:var(--M)}.ll .l3{color:var(--E)}
+.ll .l4{color:var(--R)}.ll .l5{color:var(--S)}.ll .l6{color:var(--A)}.ll .l7{color:var(--O)}
+
+/* BTN */
+.btn{display:inline-block;background:linear-gradient(135deg,var(--ouro),var(--laranja));color:var(--azul);font-weight:800;font-size:.95rem;padding:17px 40px;border-radius:50px;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 8px 28px rgba(250,204,21,.35);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(250,204,21,.5)}
+
+/* HERO */
+.hero{
+  background:var(--azul);
+  min-height:100vh;min-height:100dvh;
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+.hero::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(96,165,250,.15) 0%,transparent 70%);pointer-events:none}
+.hero-body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px 24px}
+
+.hero h1{font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:900;line-height:1.15;color:#fff;max-width:640px;margin-bottom:12px;letter-spacing:-.03em}
+.hero h1 strong{color:var(--ouro)}
+.hero .sub{font-size:clamp(.82rem,1.6vw,.95rem);color:rgba(255,255,255,.55);max-width:500px;line-height:1.65;margin-bottom:28px;font-weight:400}
+
+/* Video vertical estilo celular */
+.video-wrap{
+  width:100%;
+  max-width:340px;
+  aspect-ratio:9/16;
+  background:rgba(0,0,0,.4);
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:22px;
+  color:rgba(255,255,255,.2);
+  font-size:.75rem;
+  overflow:hidden;
+}
+.video-wrap .play{font-size:2.5rem}
+
+.trust{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:center;font-size:.72rem;color:rgba(255,255,255,.35);margin-top:16px}
+.trust span{display:flex;align-items:center;gap:5px}
+
+@media(max-width:600px){
+  .video-wrap{max-width:280px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-body">
+    
+    <h1>Como destravar o espanhol e<br>falar com <strong>confiança e naturalidade</strong><br>em até <strong>6 meses ou menos</strong></h1>
+    
+    <p class="sub">Sem decorar regras gramaticais, sem estudar horas por dia,<br>com um método simples e eficiente</p>
+
+    <div class="video-wrap">
+      <div class="play">▶</div>
+      <div>Cole aqui o embed do seu video Vturb</div>
+    </div>
+
+    <a href="https://pay.hotmart.com/W10136664F?off=4pflcpst&checkoutMode=10&bid=1762018872179&offDiscount=DESC200" class="btn">ACESSO IMEDIATO COM DESCONTO →</a>
+
+    <div class="trust">
+      <span>🔒 Pagamento 100% seguro</span>
+      <span>✅ Acesso imediato</span>
+      <span>Vagas limitadas</span>
+    </div>
+
+    <div style="margin-top:20px;display:flex;align-items:center;justify-content:center;gap:12px;max-width:420px">
+      <div style="display:flex;align-items:center">
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);margin-left:-8px"><img src="https://i.imgur.com/placeholder1.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);margin-left:-8px"><img src="https://i.imgur.com/placeholder2.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);margin-left:-8px"><img src="https://i.imgur.com/placeholder3.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);margin-left:-8px"><img src="https://i.imgur.com/placeholder4.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.2);margin-left:-8px"><img src="https://i.imgur.com/placeholder5.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+      <div style="font-size:.75rem;color:rgba(255,255,255,.7);line-height:1.4;text-align:left">
+        <strong style="color:#fff">Já somos mais de 5 mil alunos</strong><br>
+        e a comunidade só cresce!
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

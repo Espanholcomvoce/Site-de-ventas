@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloco Objeções - Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#0d1f4a;
+  --ouro:#facc15;
+  --laranja:#fb923c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0d1f4a;color:#fff}
+.c{max-width:860px;margin:0 auto;padding:0 24px}
+
+.objecoes{background:var(--azul);padding:72px 0}
+
+.sec-label{
+  display:inline-block;
+  font-size:.7rem;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:6px 18px;border-radius:50px;
+  border:1.5px solid rgba(255,255,255,.15);
+  color:rgba(255,255,255,.5);
+  margin-bottom:18px;
+}
+
+.sec-h2{
+  font-size:clamp(1.3rem,3vw,2rem);
+  font-weight:900;line-height:1.15;
+  letter-spacing:-.03em;
+  color:#fff;
+  margin-bottom:48px;
+}
+
+/* Grid de objeções */
+.obj-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-bottom:48px;
+}
+@media(max-width:580px){.obj-grid{grid-template-columns:1fr}}
+
+.obj-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:20px 22px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  transition:background .2s;
+}
+.obj-card:hover{background:rgba(255,255,255,.08)}
+
+.obj-icon{
+  font-size:1.4rem;
+  flex-shrink:0;
+  margin-top:2px;
+}
+
+.obj-content{}
+.obj-q{
+  font-size:.92rem;
+  font-weight:700;
+  color:rgba(255,255,255,.9);
+  line-height:1.4;
+  margin-bottom:6px;
+  font-style:italic;
+}
+.obj-a{
+  font-size:.82rem;
+  color:rgba(255,255,255,.45);
+  line-height:1.55;
+  font-weight:400;
+}
+
+/* Resposta final — caixa destaque */
+.resp-box{
+  background:rgba(250,204,21,.08);
+  border:1.5px solid rgba(250,204,21,.25);
+  border-radius:16px;
+  padding:32px 36px;
+  text-align:center;
+}
+.resp-box .emoji{font-size:2rem;margin-bottom:12px;display:block}
+.resp-box h3{
+  font-size:1.15rem;
+  font-weight:900;
+  color:var(--ouro);
+  margin-bottom:12px;
+  letter-spacing:-.02em;
+}
+.resp-box p{
+  font-size:.9rem;
+  color:rgba(255,255,255,.65);
+  line-height:1.7;
+  max-width:580px;
+  margin:0 auto;
+}
+.resp-box p strong{color:rgba(255,255,255,.9)}
+</style>
+</head>
+<body>
+
+<section class="objecoes">
+<div class="c">
+  <div style="text-align:center">
+    <span class="sec-label">Eu sei o que você pode estar pensando</span>
+    <h2 class="sec-h2">Essas dúvidas são normais.<br>Deixa eu responder cada uma delas.</h2>
+  </div>
+
+  <div class="obj-grid">
+
+    <div class="obj-card">
+      <div class="obj-icon">🤔</div>
+      <div class="obj-content">
+        <p class="obj-q">"Será que isso daria certo para mim?"</p>
+        <p class="obj-a">O método foi criado especificamente para brasileiros — sejam iniciantes ou quem já tentou antes e travou. Mais de 5.000 alunos já destravaram seguindo exatamente esse caminho.</p>
+      </div>
+    </div>
+
+    <div class="obj-card">
+      <div class="obj-icon">⏰</div>
+      <div class="obj-content">
+        <p class="obj-q">"Será que eu vou ter tempo?"</p>
+        <p class="obj-a">Com 15 a 20 minutos por dia você já avança. As aulas foram feitas para quem tem a rotina cheia — curtas, objetivas e acessíveis quando e onde você quiser.</p>
+      </div>
+    </div>
+
+    <div class="obj-card">
+      <div class="obj-icon">📚</div>
+      <div class="obj-content">
+        <p class="obj-q">"Vou precisar ficar horas estudando?"</p>
+        <p class="obj-a">Não. O programa foi construído para eliminar o estudo por acúmulo. Você aprende o que realmente precisa, na ordem certa — sem desperdício de tempo.</p>
+      </div>
+    </div>
+
+    <div class="obj-card">
+      <div class="obj-icon">🧠</div>
+      <div class="obj-content">
+        <p class="obj-q">"Será que preciso decorar gramática?"</p>
+        <p class="obj-a">Zero decoreba. O espanhol real entra pelo contexto, pela repetição natural e pela prática — exatamente como você aprendeu português quando criança.</p>
+      </div>
+    </div>
+
+    <div class="obj-card">
+      <div class="obj-icon">🔄</div>
+      <div class="obj-content">
+        <p class="obj-q">"Vou precisar ficar traduzindo tudo?"</p>
+        <p class="obj-a">Pelo contrário — o método te ensina a pensar diretamente em espanhol. Aos poucos a tradução mental desaparece e o idioma começa a sair naturalmente.</p>
+      </div>
+    </div>
+
+    <div class="obj-card">
+      <div class="obj-icon">😰</div>
+      <div class="obj-content">
+        <p class="obj-q">"Será que vou conseguir falar com nativos sem travar?"</p>
+        <p class="obj-a">Sim. O app exclusivo do programa simula conversas reais para você praticar sem pressão — até que falar com nativos vire algo natural, não assustador.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="resp-box">
+    <span class="emoji">💡</span>
+    <h3>Todas essas dúvidas têm uma raiz em comum.</h3>
+    <p>Você foi condicionado a acreditar que aprender idioma é difícil, demorado e exige talento. <strong>Não é verdade.</strong> O que você precisa é de um método que respeite como o seu cérebro realmente funciona — e é exatamente isso que o Programa Imersão Nativa entrega.</p>
+  </div>
+
+</div>
+</section>
+
+</body>
+</html>

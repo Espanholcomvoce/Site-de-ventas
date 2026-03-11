@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depoimentos – Mais Vídeos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0d1f4a;--gold:#c9973a;--soft:#f7f5f0;--muted:#64748b}
+body{font-family:'DM Sans',sans-serif;background:var(--soft)}
+
+.block{padding:64px 24px}
+.block-inner{max-width:1100px;margin:0 auto}
+.section-head{text-align:center;margin-bottom:32px}
+.section-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 16px;border-radius:50px;border:1.5px solid #d1d5db;color:var(--muted);margin-bottom:16px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--navy);line-height:1.1}
+
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:700px){.vgrid{grid-template-columns:1fr}}
+.vcard{border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(13,31,74,.12);background:#040c1a}
+.vwrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.vwrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+</style>
+</head>
+<body>
+<div class="block">
+  <div class="block-inner">
+    <div class="section-head">
+      <span class="section-tag">Mais histórias</span>
+      <h2 class="section-title">Eles também fizeram a escolha certa</h2>
+    </div>
+    <div class="vgrid">
+      <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1001700637?autoplay=0&controls=1&playsinline=1" allowfullscreen allow="autoplay; fullscreen"></iframe></div></div>
+      <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1001700775?autoplay=0&controls=1&playsinline=1" allowfullscreen allow="autoplay; fullscreen"></iframe></div></div>
+      <div class="vcard"><div class="vwrap"><iframe src="https://player.vimeo.com/video/1001700671?autoplay=0&controls=1&playsinline=1" allowfullscreen allow="autoplay; fullscreen"></iframe></div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

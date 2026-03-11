@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depoimentos – Textos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0d1f4a;--gold:#c9973a;--text:#2d3748;--muted:#64748b;--white:#fff}
+body{font-family:'DM Sans',sans-serif;background:#fff}
+
+.block{padding:64px 24px}
+.block-inner{max-width:1100px;margin:0 auto}
+.section-head{text-align:center;margin-bottom:32px}
+.section-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 16px;border-radius:50px;border:1.5px solid #d1d5db;color:var(--muted);margin-bottom:16px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--navy);line-height:1.1}
+
+.tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:600px){.tgrid{grid-template-columns:1fr}}
+.tcard{background:var(--white);border-radius:16px;padding:28px 24px;box-shadow:0 2px 16px rgba(13,31,74,.07);border-left:4px solid var(--gold);position:relative}
+.tcard::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--gold);opacity:.15;position:absolute;top:-8px;left:16px;line-height:1}
+.tcard p{font-size:.88rem;line-height:1.7;color:var(--text);font-style:italic;position:relative;z-index:1}
+.tcard .author{margin-top:16px;font-weight:700;font-size:.8rem;color:var(--navy)}
+.tcard .role{font-size:.75rem;color:var(--muted);font-weight:400}
+</style>
+</head>
+<body>
+<div class="block">
+  <div class="block-inner">
+    <div class="section-head">
+      <span class="section-tag">Histórias que inspiram</span>
+      <h2 class="section-title">O que muda na vida de quem decide aprender de verdade</h2>
+    </div>
+    <div class="tgrid">
+      <div class="tcard">
+        <p>"Trabalho há anos com desenvolvimento de aprendizagem em grandes organizações. Quando encontrei o Imersão Nativa, li tudo duas vezes antes de decidir. Mas em apenas 2 semanas percebi algo muito distinto na minha forma de falar. Nas reuniões que antes trocavam para inglês quando eu participava, comecei a ser mais presente e natural. Quem entende de metodologia reconhece quando há um método sério por trás."</p>
+        <div class="author">Wanderlei Rodrigues <span class="role">· 42 anos, especialista em aprendizagem corporativa</span></div>
+      </div>
+      <div class="tcard">
+        <p>"Aos 75 anos, saí do Rio de Janeiro para morar na Espanha sabendo apenas 'buenos días'. Hoje me sinto segura para me comunicar e viver uma nova vida. A idade não foi impedimento — foi a prova de que enquanto estamos vivos, podemos aprender."</p>
+        <div class="author">Eliane Lobato <span class="role">· 75 anos, Rio de Janeiro → Espanha</span></div>
+      </div>
+      <div class="tcard">
+        <p>"Meus avós vieram da Espanha, minha mãe é filha de espanhóis, meu pai toca violão com música espanhola — e eu nunca aprendi o idioma. Até que decidi viajar para conhecer os lugares de onde minha família veio. Precisava falar espanhol de verdade, não apenas sobreviver. Encontrei a professora Alejandra e foi exatamente o que precisava. O que mais me marcou foi a paixão dela por ensinar."</p>
+        <div class="author">Luiz Façanha <span class="role">· 45 anos, servidor público, Brasil</span></div>
+      </div>
+      <div class="tcard">
+        <p>"Esta semana tivemos um encontro acadêmico do meu doutorado e recebemos a visita de um professor do Chile. Fui jantar com ele e outros professores e passei a noite inteira praticando meu espanhol. No dia seguinte, durante a palestra, fiz perguntas e interagi em espanhol diante de todos os meus colegas. Foi uma conquista enorme para mim."</p>
+        <div class="author">Fabricio <span class="role">· Doutorando, Brasil</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
