@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloco Comparativo - Estandarizado</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --azul: #0d1f4a;
+  --ouro: #facc15;
+  --laranja: #fb923c;
+  --cyan: #38bdf8;
+  --verde: #10b981;
+  --text-principal: #0d1f4a;
+  --text-secundario: #475569;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; }
+
+/* ── Section wrapper ── */
+.comparativo {
+  background: #ffffff;
+  padding: 80px 0 88px;
+}
+
+.c {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Header ── */
+.sec-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  background: rgba(56, 189, 248, 0.10);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* Pulsing dot */
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.6);
+  animation: pulse-neon 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-neon {
+  0%   { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.6); }
+  50%  { box-shadow: 0 0 0 7px rgba(56, 189, 248, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+}
+
+.comp-h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-principal);
+}
+
+.comp-sub {
+  text-align: center;
+  color: var(--text-secundario);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.65;
+  margin-bottom: 44px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comp-sub strong {
+  color: var(--text-principal);
+  font-weight: 700;
+}
+
+/* ── Grid ── */
+.cg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 620px) {
+  .cg { grid-template-columns: 1fr; }
+}
+
+/* ── Cards ── */
+.cc {
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 2px solid;
+}
+
+/* Bad column */
+.cc.ruim {
+  background: #0d1f4a;
+  border-color: rgba(248, 113, 113, 0.25);
+}
+
+/* Good column — slightly lighter blue + stronger gold border */
+.cc.bom {
+  background: #122158;
+  border-color: rgba(250, 204, 21, 0.45);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 36px rgba(250, 204, 21, 0.13);
+}
+
+.cc.bom::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 100% 0%, rgba(250, 204, 21, 0.08), transparent 60%);
+  pointer-events: none;
+}
+
+/* ── Card header ── */
+.chead {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc.ruim .chead { color: #f87171; }
+.cc.bom  .chead { color: #facc15; }
+
+/* ── Items ── */
+.ci {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.ci:last-child { margin-bottom: 0; }
+
+.cc.ruim .ci { color: rgba(255, 255, 255, 0.5); }
+.cc.bom  .ci { color: rgba(255, 255, 255, 0.75); }
+
+/* Highlight last item of the good column */
+.cc.bom .ci:last-child {
+  color: var(--ouro);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Divider line between items */
+.cc.bom .ci + .ci {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.cc.ruim .ci + .ci {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+</style>
+</head>
+<body>
+
+<section class="comparativo">
+  <div class="c">
+
+    <div style="text-align:center">
+      <span class="sec-tag"><span class="pulse-dot"></span>A diferença que muda tudo</span>
+      <h2 class="comp-h2">Por que tantas pessoas estudam espanhol...<br>e mesmo assim não conseguem falar.</h2>
+      <p class="comp-sub">O problema não é falta de esforço.<br><strong>É que a maioria dos cursos ensina espanhol de um jeito que não prepara você para falar de verdade.</strong></p>
+    </div>
+
+    <div class="cg">
+
+      <div class="cc ruim">
+        <div class="chead">❌ Outros cursos</div>
+        <div class="ci"><span>😵</span><span>Aulas longas e cansativas que acabam desmotivando</span></div>
+        <div class="ci"><span>📚</span><span>Gramática ensinada como teoria, longe de como os nativos realmente falam</span></div>
+        <div class="ci"><span>🐢</span><span>Meses ou anos estudando para conseguir dizer frases básicas</span></div>
+        <div class="ci"><span>🧭</span><span>Sem uma progressão clara — você não sabe em que nível está nem como avançar</span></div>
+        <div class="ci"><span>🧠</span><span>Sem revisão inteligente — o que você aprende hoje se esquece em poucos dias</span></div>
+        <div class="ci"><span>📩</span><span>Suporte genérico ou inexistente quando surgem dúvidas</span></div>
+      </div>
+
+      <div class="cc bom">
+        <div class="chead">✨ Programa Imersão Nativa</div>
+        <div class="ci"><span>⚡</span><span>Aulas curtas e objetivas, feitas para aprender mesmo com pouco tempo</span></div>
+        <div class="ci"><span>🗣️</span><span>Espanhol real desde a primeira aula, como os nativos realmente falam</span></div>
+        <div class="ci"><span>📊</span><span>Método estruturado pelo QECR europeu, com evolução clara de nível</span></div>
+        <div class="ci"><span>🎯</span><span>Você sempre sabe onde está e qual é o próximo passo</span></div>
+        <div class="ci"><span>🧠</span><span>Sistema de revisão inteligente que ajuda o cérebro a fixar o idioma</span></div>
+        <div class="ci"><span>📱</span><span>App exclusivo com IA, para praticar espanhol quando e onde quiser</span></div>
+        <div class="ci"><span>👩‍🏫</span><span>Acompanhamento de uma professora nativa, que entende exatamente as dificuldades dos brasileiros</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
