@@ -35,7 +35,7 @@
     padding: 60px 32px 60px;
     text-align: center;
     position: relative;
-    background: linear-gradient(135deg, #eef4ff 0%, #dbeafe 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   }
 
   .intro-section::before {
@@ -52,36 +52,19 @@
   }
 
   .sec-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #f1f5f9;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(6, 182, 212, 0.1));
+    color: #0891b2;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    padding: 10px 22px;
+    padding: 8px 20px;
     border-radius: 30px;
     margin-bottom: 24px;
-    border: 1.5px solid #cbd5e1;
-    box-shadow: none;
+    border: 1px solid rgba(6, 182, 212, 0.2);
     position: relative;
     z-index: 1;
-  }
-
-  .sec-tag::before {
-    display: none;
-  }
-
-  .sec-tag-text {
-    background: none;
-    -webkit-text-fill-color: #0d1f4a;
-    color: #0d1f4a;
-  }
-
-  @keyframes neon-pulse {
-    0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px #38bdf8, 0 0 18px #38bdf8; }
-    50% { opacity: 0.3; transform: scale(0.7); box-shadow: 0 0 4px #38bdf8; }
   }
 
   .intro-h2 {
@@ -97,7 +80,7 @@
   }
 
   .intro-h2 .highlight {
-    background: linear-gradient(135deg, #10b981, #38bdf8);
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -219,7 +202,7 @@
 
   .pilar-1 .eyebrow {
     background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.4);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     color: #38bdf8;
   }
 
@@ -549,7 +532,7 @@
      PILAR 2 - TECNOLOGIA (LIGHT VERSION)
      ============================================ */
   .pilar-2 {
-    background: linear-gradient(180deg, #eef4ff 0%, #dbeafe 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
     padding: 70px 32px 70px;
   }
 
@@ -589,16 +572,13 @@
   }
 
   .pilar-2 .eyebrow {
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.4);
-    color: #10b981;
-    text-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
-    box-shadow: 0 0 18px rgba(16, 185, 129, 0.2), inset 0 0 12px rgba(16, 185, 129, 0.05);
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #0891b2;
   }
 
   .pilar-2 .eyebrow::before {
-    background: #10b981;
-    box-shadow: 0 0 8px #10b981, 0 0 18px #10b981;
+    background: #38bdf8;
   }
 
   .pilar-2 .main-h2 {
@@ -664,14 +644,14 @@
     gap: 14px;
     align-items: flex-start;
     background: #ffffff;
-    border: 2px solid rgba(147, 197, 253, 0.5);
+    border: 2px solid #e2e8f0;
     border-left: 4px solid var(--feature-color);
     border-radius: 14px;
     padding: 16px 20px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
   .feature-card::before {
@@ -898,14 +878,13 @@
   /* Highlight App Box */
   .highlight-app {
     background: #ffffff;
-    border: 2px solid rgba(147, 197, 253, 0.5);
+    border: 2px solid #e2e8f0;
     border-left: 4px solid #0ea5e9;
     border-radius: 16px;
     padding: 24px 28px;
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(30, 58, 138, 0.1);
   }
 
   .highlight-app::before {
@@ -936,10 +915,10 @@
 
   .stats-premium {
     background: #ffffff;
-    border: 2px solid rgba(147, 197, 253, 0.5);
+    border: 2px solid #e2e8f0;
     border-radius: 24px;
     padding: 48px;
-    box-shadow: 0 8px 32px rgba(30, 58, 138, 0.12);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   }
 
   .stats-grid {
@@ -1417,7 +1396,7 @@
 
 <!-- ========== INTRO SECTION ========== -->
 <section class="intro-section">
-  <span class="sec-tag"><span class="sec-tag-text">Como funciona o método</span></span>
+  <span class="sec-tag">Como funciona o método</span>
   <h2 class="intro-h2">Os 3 Pilares da <span class="highlight">Fluência Real</span></h2>
   <p class="intro-sub">São eles que garantem não só que você aprenda, mas que realmente <strong>use o espanhol na vida real.</strong></p>
 </section>
